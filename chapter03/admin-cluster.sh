@@ -9,7 +9,7 @@ export LB_CONTROLL_PLANE_VIP=10.200.0.98
 
 # Create some service account keys and use them to authenticate
 gcloud iam service-accounts keys create installer.json \
-  --iam-account=bm-owner@ab-academy-dev.iam.gserviceaccount.com
+  --iam-account=bm-owner@$PROJECT_ID.iam.gserviceaccount.com
 export GOOGLE_APPLICATION_CREDENTIALS=~/installer.json
 
 # Generate a bmctl config file
